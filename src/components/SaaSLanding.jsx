@@ -19,7 +19,6 @@ const SaaSLanding = () => {
                 </Container>
             </Navbar>
 
-            {/* Navbar yüksekliği kadar padding ekle */}
             <div style={{ paddingTop: '80px' }}>
                 <section className="py-5 hero-section">
                     <Container className="text-center py-5">
@@ -134,19 +133,31 @@ const SaaSLanding = () => {
                         <Row className="g-4">
                             {[
                                 {
-                                    review: "Amazing service! SaaSify transformed our business operations completely.",
+                                    review: "Amazing service! SaaSify transformed our business operations completely. The platform is intuitive and the analytics helped us grow 200% in just 6 months.",
                                     name: "Sarah Johnson",
                                     position: "CEO, TechInnovate",
-                                    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                                 },
                                 {
-                                    review: "Highly recommend! The platform is intuitive and the support team is exceptional.",
+                                    review: "Highly recommend! The platform is intuitive and the support team is exceptional. They helped us integrate with our existing systems seamlessly.",
                                     name: "Michael Chen",
                                     position: "CTO, DataFlow Inc",
                                     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                                 },
+                                {
+                                    review: "The best decision we made was switching to SaaSify. The scalability allowed us to handle rapid growth without any hiccups.",
+                                    name: "Emma Rodriguez",
+                                    position: "Operations Director, GrowthLabs",
+                                    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                },
+                                {
+                                    review: "Outstanding customer service and a product that delivers on its promises. Our team productivity increased by 45% since implementation.",
+                                    name: "James Wilson",
+                                    position: "IT Manager, Enterprise Solutions",
+                                    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                                },
                             ].map((testimonial, i) => (
-                                <Col md={6} key={i}>
+                                <Col lg={6} key={i}>
                                     <Card className="h-100 border-0 shadow-sm testimonial-card">
                                         <Card.Body className="p-4">
                                             <div className="d-flex align-items-center mb-4">
