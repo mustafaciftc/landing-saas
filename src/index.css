@@ -1,0 +1,112 @@
+/* Genel Stiller */
+.saas-landing {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* Navbar Özelleştirmesi */
+.navbar-custom {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #495057;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #0d6efd;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: scale(1.03);
+}
+
+/* Öne Çıkan Plan (Pro) */
+.pricing-section .col-lg-4:nth-child(2) .pricing-card {
+    border: 2px solid #0d6efd;
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-section .col-lg-4:nth-child(2) .pricing-card::before {
+    content: "Most Popular";
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: #0d6efd;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    transition: transform 0.3s ease;
+    border-left: 4px solid #0d6efd !important;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-3px);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+}
+
+/* Animasyonlar */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 768px) {
+    .hero-section .display-3 {
+        font-size: 2.5rem;
+    }
+    
+    .pricing-section .col-lg-4:nth-child(2) .pricing-card::before {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+/* Buton Özelleştirmeleri */
+.btn {
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
